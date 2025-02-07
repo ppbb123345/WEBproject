@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งเตือน</title>
+    <style>
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            display: <%= message ? 'block' : 'none' %>;
+        }
+        .popup .close {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            background: gray;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <h2>แบบฟอร์มบันทึกข้อมูล</h2>
+        <form action="/submit" method="post">
+            <input type="text" name="value1" required>
+            <input type="text" name="value2" required>
+            <button type="submit">บันทึก</button>
+        </form>
+    </div> -->
+
+    <div class="popup">
+        <p><%= message %></p>
+        <a href="/home" class="close">ตกลง</a>
+    </div>
+</body>
+</html>

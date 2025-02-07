@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contack.css">
+</head>
+<body>
+    <div class="page">
+        <div class="logo">
+            <a href="home"><img src="/img/img4.png" alt="Logo"></a>
+            <a href="/"><span>ออกจากระบบ</span></a>
+            <!-- <a href="login"><span>เข้าสู่ระบบ</span></a> -->
+            <!-- <a href="register"><span>&nbsp;&nbsp; สมัครสมาชิก</span></a> -->
+        </div>
+        <div class="menu">
+            <a href="home">หน้าหลัก</a>
+            <a href="about">ผลงาน</a>
+            <a href="article">บทความ</a>
+            <a href="estimate">ประเมินการบริการ</a>
+            <a href="review">รีวิว</a>
+            <a href="contack">ติดต่อเรา</a>
+        </div>
+    </div>
+    <div class="contact-us">
+        <h1>ติดต่อเรา</h1>
+    </div>
+            <!-- ฟอร์ม -->
+            <form id="contactForm" action="/register3" method="post">
+                <div class="form-group">
+                    <label for="name">ชื่อ-นามสกุล</label>
+                    <input type="text" id="name" name="Fullname" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Tel">เบอร์ติดต่อกลับ</label>
+                    <input type="Tel" id="Tel" name="phone" placeholder="Your Tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">แจ้งเรื่องที่ต้องการปรึกษา</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- โมดอล -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>ติดต่อสำเร็จ!</h2>
+            <p>ขอบคุณที่ติดต่อเรา เราจะตอบกลับในเร็วๆ นี้</p>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <p>ทนายอภิสิทธิ์ ศิริโพธิ์สพ</p>
+        <p>รับว่าความทั่วราชอาณาจักร</p>
+        <p>Tel : 081-950-5859</p>
+        <div class="menu">
+            <a href="home">หน้าหลัก</a>
+            <a href="about">ผลงาน</a> |
+            <a href="article">บทความ</a>
+            <a href="contack">ติดต่อเรา</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; ทนายอภิสิทธิ์ ศิริโพธิ์สพ</p>
+    </div>
+
+    <script src="/js/contact.js"></script>
+</body>
+</html>

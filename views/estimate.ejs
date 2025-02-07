@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบประเมินทนายความ</title>
+    <link rel="stylesheet" href="/css/estimate.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="logo">
+            <a href="home"><img src="/img/img4.png" alt="Logo"></a>
+            <a href="/"><span>ออกจากระบบ</span></a>
+            <!-- <a href="login"><span>เข้าสู่ระบบ</span></a>
+            <a href="register"><span>&nbsp;&nbsp; สมัครสมาชิก</span></a> -->
+        </div>
+        <div class="menu">
+            <a href="home">หน้าหลัก</a>
+            <a href="about">ผลงาน</a>
+            <!-- <a href="#">บริการ</a> -->
+            <a href="article">บทความ</a>
+            <!-- <a href="#">แบบฟอร์ม</a> -->
+            <a href="estimate">ประเมินการบริการ</a>
+            <a href="review">รีวิว</a>
+            <a href="contack">ติดต่อเรา</a>
+            <!-- <a href="#">ค้นหา</a> -->
+        </div>
+    </div>
+    <div class="review-container">
+        <h2>ให้คะแนนบริการของทนายความ</h2>
+        
+        <div class="rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <form id="review-form" action="/register4" method="post">
+            <label>ทนายมีความเชี่ยวชาญและให้คำแนะนำเข้าใจง่ายหรือไม่?</label>
+            <select id="question1">
+                <option>มากที่สุด</option>
+                <option>ค่อนข้างมาก</option>
+                <option>ปานกลาง</option>
+                <option>ค่อนข้างน้อย</option>
+                <option>ไม่เลย</option>
+            </select>
+
+            <label>ทนายให้ข้อมูลที่ถูกต้องและเป็นประโยชน์หรือไม่?</label>
+            <select id="question2">
+                <option>มากที่สุด</option>
+                <option>ค่อนข้างมาก</option>
+                <option>ปานกลาง</option>
+                <option>ค่อนข้างน้อย</option>
+                <option>ไม่เลย</option>
+            </select>
+
+            <label>ทนายมีความตรงต่อเวลาและความรับผิดชอบหรือไม่?</label>
+            <select id="question3">
+                <option>มากที่สุด</option>
+                <option>ค่อนข้างมาก</option>
+                <option>ปานกลาง</option>
+                <option>ค่อนข้างน้อย</option>
+                <option>ไม่เลย</option>
+            </select>
+
+            <label>ความสามารถในการวิเคราะห์คดีและวางกลยุทธ์ทางกฎหมาย</label>
+            <select id="question4">
+                <option>มากที่สุด</option>
+                <option>ค่อนข้างมาก</option>
+                <option>ปานกลาง</option>
+                <option>ค่อนข้างน้อย</option>
+                <option>ไม่เลย</option>
+            </select>
+
+            <label>อัตราค่าบริการและความคุ้มค่า</label>
+            <select id="question5">
+                <option>มากที่สุด</option>
+                <option>ค่อนข้างมาก</option>
+                <option>ปานกลาง</option>
+                <option>ค่อนข้างน้อย</option>
+                <option>ไม่เลย</option>
+            </select>
+
+            <label>คุณมีความคิดเห็นเพิ่มเติมหรือไม่?</label>
+            <textarea id="comment" placeholder="พิมพ์ความคิดเห็นของคุณที่นี่..."></textarea>
+
+            <button type="submit">ส่งแบบประเมิน</button>
+            <p class="success-message">✅ ส่งแบบประเมินสำเร็จ!</p>
+        </form>
+    </div>
+
+    <script src="/js/estimate.js"></script>
+
+    <div class="footer-main">
+        <p>ทนายอภิสิทธิ์ ศิริโพธิ์สพ</p>
+        <p>รับว่าความทั่วราชอาณาจักร</p>
+        <p>Tel : 081-950-5859</p>
+
+        <div class="menu">
+            <a href="home">หน้าหลัก</a> |
+            <a href="about">ผลงาน</a>
+            <!-- <a href="#">บริการ</a> -->
+            <a href="article">บทความ</a>
+            <!-- <a href="#">แบบฟอร์ม</a> -->
+            <a href="contack">ติดต่อเรา</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mr.apisit.siriposop?locale=th_TH"><img src="/img/facebook.jpg" alt="Facebook"></a>
+            <a href="https://line.me/ti/p/5mO_CErwea"><img src="/img/line.jpg" alt="Line"></a>
+        </div>
+    </div>
+
+   <div class="footer">
+        <p>&copy; ทนายอภิสิทธิ์ ศิริโพธิ์สพ</p>
+    </div>
+</body>
+</html>

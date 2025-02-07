@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body background="/img/blackgroud2.PNG">
+    <div class="register-container">
+        <h2>ลงทะเบียน</h2>
+        <form action="/register1" method="post">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้งาน</label>
+                <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้งาน" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" placeholder="กรอกอีเมล" required>
+            </div>
+            <div class="form-group">
+                <label for="Tel">เบอร์โทรศัพท์</label>
+                <input type="tel" id="Tel" name="tel" placeholder="กรอกเบอร์โทรศัพท์" required>
+            </div>
+            <div class="form-group">
+                <label for="number">อายุ</label>
+                <input type="number" id="number" name="Age" placeholder="กรุณาใส่อายุของคุณ" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="กรอกยืนยันรหัสผ่าน" required>
+            </div>
+            <button type="submit" class="register-btn">สมัครสมาชิก</button>
+        </form>
+        <p class="login-link">มีบัญชีอยู่แล้ว? <a href="login">เข้าสู่ระบบ</a></p>
+    </div>
+</body>
+</html>
